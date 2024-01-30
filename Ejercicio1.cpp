@@ -8,14 +8,15 @@ char c[25];
 char generarCaracter()
 {
 	return caracter[rand()%26
-	];
+		];
 }
 
 int generarNumero()
 {
 	return rand()%51;
 }
- 
+
+void imprimir()
 {
 	cout<<"CAR\tNUM"<<endl;
 	for(int i=0; i<10; i++)
@@ -29,15 +30,12 @@ void generarDatos()
 	for(int i=0; i<10;i++)
 	{
 		numero[i] = generarNumero();
-		char elemento = generarCaracter();
-		for(char j:caracter)
+		c[i]=generarCaracter();
+		string elemento = c{i];
+		if((c.find(elemento,0)))
 		{
-		    if(j == elemento)
-		    {
-		        elemento = generarCaracter();
-		    }
+			c[i]=generarCaracter();
 		}
-		c[i] = elemento;
 	}
 }
 
